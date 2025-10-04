@@ -1,0 +1,5 @@
+{
+  "name": "AI Edit V1",
+  "description": "An interactive web application for designing stunning posters. Upload product images, provide a concept, and let AI generate and refine beautiful posters for you. Features background removal, iterative editing, multi-aspect ratio support, and a drag-and-drop gallery.",
+  "requestFramePermissions": []
+}

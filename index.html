@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Edit</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            backgroundImage: {
+              'rose-candy': 'linear-gradient(135deg, #EC4899, #F43F5E, #FB7185)',
+              'galaxy-purple': 'linear-gradient(145deg, #7C3AED, #9333EA, #C084FC)',
+            },
+            colors: {
+              // Light Mode
+              'bkg-light': '#F9FAFB',
+              'surface-light': '#FFFFFF',
+              'primary-light': '#EC4899',
+              'on-primary-light': '#FFFFFF',
+              'text-light': '#111827',
+              'subtext-light': '#6B7280',
+              'border-light': '#E5E7EB',
+              'success-light': '#10B981',
+              'error-light': '#EF4444',
+              'warning-light': '#F59E0B',
+
+              // Dark Mode
+              'bkg-dark': '#111827',
+              'surface-dark': '#1F2937',
+              'primary-dark': '#9333EA',
+              'on-primary-dark': '#F9FAFB',
+              'text-dark': '#F9FAFB',
+              'subtext-dark': '#9CA3AF',
+              'border-dark': '#374151',
+              'success-dark': '#34D399',
+              'error-dark': '#F87171',
+              'warning-dark': '#FBBF24',
+              
+              // Base
+              'transparent': 'transparent',
+              'current': 'currentColor',
+            },
+          },
+        },
+      }
+    </script>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.22.0"
+  }
+}
+</script>
+</head>
+<body class="bg-bkg-light dark:bg-bkg-dark text-text-light dark:text-text-dark font-sans">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+</body>
+</html>
